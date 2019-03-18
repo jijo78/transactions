@@ -1,33 +1,89 @@
-.App {
+body {
+  padding: 2rem;
+  font-family: MaisonNeue, HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.monthly-balance {
+  max-width: 30rem;
+  margin: 0 auto;
+  color: #0d1b33;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-align: left;
+}
+.monthly-balance__header {
+  width: 100%;
+  border-radius: 0.5rem;
+  display: inline-block;
+  background-color: #f93849;
+  color: #fff;
+  padding: 2rem;
   text-align: center;
+  box-shadow: 0.1rem 0.1rem 0.9rem #000;
+  position: relative;
+  min-height: 12rem;
+  display: inline-grid;
+  margin: 0 0 1.5rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.monthly-balance__transactions li {
+  width: 110%;
+  color: #0d1b33;
+  border-bottom: 0.08rem solid #ddd;
+  padding: 0.5rem;
+  font-weight: 700;
+  align-items: flex-end;
+  align-content: flex-end;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.monthly-balance__header-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.7rem;
+}
+.monthly-balance__header-logo-img {
+  width: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+time {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p,
+span {
+  margin: 0 0 0.3rem;
+  padding: 0;
+  text-align: left;
+}
+
+.monthly-balance__details-account-number-info {
+  align-items: flex-end;
+  align-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.5), -1px -1px rgba(255, 255, 255, 0.5);
+}
+.monthly-balance__amount {
+  font-weight: lighter;
+  font-size: 2rem;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.5), -1px -1px rgba(255, 255, 255, 0.5);
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #999;
 }

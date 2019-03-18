@@ -1,0 +1,24 @@
+{
+  "transactions": [
+    {
+      "id": "13acb877dc4d8030c5dacbde33d3496a2ae3asdc000db4c793bda9c3228baca1a28",
+      "date": "2018-06-30",
+      "description": "Tesco",
+      "category_title": "Groceries",
+      "amount": {
+        "value": -57.21,
+        "currency_iso": "GBP"
+      }
+    },
+    {
+      "id": "13acb877dc4d8030c5dacbde33d3496a2ae3asdc000db4c793bda9c322ybaia1a28",
+      "date": "2018-06-22",
+      "description": "Asda",
+      "category_title": "Groceries",
+      "amount": {
+        "value": -10.55,
+        "currency_iso": "GBP"
+      }
+    }
+  ]
+}
