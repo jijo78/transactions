@@ -20,11 +20,11 @@ describe('<AccountDetails />', () => {
     expect(wrapper.length).toEqual(1);
   });
 
-  it('renders the right number of', async () => {
+  it('renders the right number of children', async () => {
     expect(wrapper.find('li').length).toEqual(2);
   });
 
-  it('renders the Provider name', async () => {
+  it('renders the right currency', async () => {
     expect(
       wrapper
         .find('.monthly-balance__transactions-currency')
@@ -33,12 +33,30 @@ describe('<AccountDetails />', () => {
     ).toEqual('GBP');
   });
 
-  it('renders every transaction value', async () => {
+  it('renders the correct type of category', async () => {
+    expect(
+      wrapper
+        .find('.monthly-balance__transactions-category')
+        .first()
+        .text()
+    ).toEqual('Groceries');
+  });
+
+  it('renders transaction value', async () => {
     expect(
       wrapper
         .find('.monthly-balance__transactions-value')
         .first()
         .text()
     ).toEqual('-57.21');
+  });
+
+  it('correctly format the date', async () => {
+    expect(
+      wrapper
+        .find('.monthly-balance__transactions-date')
+        .first()
+        .text()
+    ).toEqual('30 Jun 2018');
   });
 });

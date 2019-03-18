@@ -8,7 +8,7 @@ const Transactions = ({ transactions }) => {
     <section className='monthly-balance__transactions'>
       <h2>Transactions History</h2>
 
-      <ul key={transactions.id}>
+      <ul>
         {transactions.map(transaction => {
           return (
             <li key={transaction.id}>

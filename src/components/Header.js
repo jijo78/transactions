@@ -6,7 +6,7 @@ import AccountDetails from './AccountDetails';
 
 const Header = ({ balance, transactions, provider }) => {
   const totalExpenditure = calculateTotalExpenditure(transactions);
-  console.log(balance.currency_iso.replace('£', '£'));
+
   return (
     <header className='monthly-balance__header'>
       <section>
@@ -14,9 +14,7 @@ const Header = ({ balance, transactions, provider }) => {
           {' '}
           <span className='monthly-balance__amount'>
             {balance.amount !== '' ? (
-              `${balance.currency_iso ? balance.currency_iso.replace('GBP', '£') : '£'} ${
-                balance.amount
-              }`
+              `${balance.currency_iso} ${balance.amount}`
             ) : (
               <span className='monthly-balance__not-available'>Balance not available</span>
             )}
@@ -31,9 +29,7 @@ const Header = ({ balance, transactions, provider }) => {
         <h4>
           <span className='monthly-balance__expenditure'>
             {totalExpenditure !== 0 ? (
-              `Spent this month ${
-                balance.currency_iso ? balance.currency_iso.replace('GBP', '£') : '£'
-              } ${totalExpenditure}`
+              `Spent this month ${balance.currency_iso} ${totalExpenditure}`
             ) : (
               <span className='monthly-balance__expenditure-not-available'>
                 Total expenditure not available
