@@ -33,6 +33,15 @@ describe('<AccountDetails />', () => {
     ).toEqual('GBP');
   });
 
+  it('renders the expense description', async () => {
+    expect(
+      wrapper
+        .find('.monthly-balance__transactions-description')
+        .first()
+        .text()
+    ).toEqual('Tesco');
+  });
+
   it('renders the correct type of category', async () => {
     expect(
       wrapper

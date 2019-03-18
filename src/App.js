@@ -34,12 +34,7 @@ class App extends Component {
         })
       )
       .catch(error => {
-        const errors = error;
-        errors.summary = error.message;
-
-        this.setState({
-          error: errors
-        });
+        throw new Error('There is a problem right now!');
       });
   }
   render() {

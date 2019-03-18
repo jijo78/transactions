@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { calculateTotalExpenditure } from '../selectors/calculate-amount';
-import logo from './Monzo_logo.svg_.png';
+import logo from '../images/Monzo_logo.svg_.png';
 import AccountDetails from './AccountDetails';
 
 const Header = ({ balance, transactions, provider }) => {
@@ -23,7 +23,7 @@ const Header = ({ balance, transactions, provider }) => {
         <p>Available Balance</p>
       </section>
       <picture className='monthly-balance__header-logo'>
-        <img src={logo} alt='' className='monthly-balance__header-logo-img' />
+        <img src={logo} alt='Monzo card' className='monthly-balance__header-logo-img' />
       </picture>
       <section>
         <h4>

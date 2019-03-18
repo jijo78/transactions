@@ -98,4 +98,10 @@ describe('<Header />', () => {
         .trim()
     ).toEqual('Total expenditure not available');
   });
+
+  it('renders the provider logo', async () => {
+    expect(wrapper.find('.monthly-balance__header-logo-img').props().src).toEqual(
+      'Monzo_logo.svg_.png'
+    );
+  });
 });
