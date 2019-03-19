@@ -12,14 +12,12 @@ class App extends Component {
       provider: {}
     };
     this.fetchData = this.fetchData.bind(this);
-    this.sortNumber = this.sortNumber.bind(this);
   }
+
   componentDidMount() {
     this.fetchData();
   }
-  sortNumber(a, b) {
-    return a - b;
-  }
+
   fetchData() {
     fetch('http://www.mocky.io/v2/5c62e7c33000004a00019b05')
       .then(response => response.json())
@@ -34,7 +32,7 @@ class App extends Component {
         })
       )
       .catch(error => {
-        throw new Error('There is a problem right now!');
+        throw new Error('There is a problem right');
       });
   }
   render() {
