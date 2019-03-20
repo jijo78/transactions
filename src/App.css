@@ -2,17 +2,13 @@ body {
   padding: 2rem;
   font-family: MaisonNeue, HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.monthly-balance {
-  max-width: 30rem;
-  margin: 0 auto;
-  color: #0d1b33;
-}
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -20,6 +16,29 @@ h4 {
   margin: 0;
   text-align: left;
 }
+
+time {
+  display: block;
+}
+
+p,
+span {
+  margin: 0 0 0.3rem;
+  padding: 0;
+  text-align: left;
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.monthly-balance {
+  max-width: 30rem;
+  margin: 0 auto;
+  color: #0d1b33;
+}
+
 .monthly-balance__header {
   width: 100%;
   border-radius: 0.5rem;
@@ -48,25 +67,16 @@ h4 {
   justify-content: space-between;
   padding-left: 0;
 }
+
 .monthly-balance__header-logo {
   position: absolute;
   top: 0;
   right: 0;
   padding: 0.7rem;
 }
+
 .monthly-balance__header-logo-img {
   width: 4rem;
-}
-
-time {
-  display: block;
-}
-
-p,
-span {
-  margin: 0 0 0.3rem;
-  padding: 0;
-  text-align: left;
 }
 
 .monthly-balance__details-account-number-info {
@@ -77,13 +87,9 @@ span {
   justify-content: space-between;
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5), -1px -1px rgba(255, 255, 255, 0.5);
 }
+
 .monthly-balance__amount {
   font-weight: lighter;
   font-size: 2rem;
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5), -1px -1px rgba(255, 255, 255, 0.5);
-}
-
-.small {
-  font-size: 0.8rem;
-  color: #999;
 }
